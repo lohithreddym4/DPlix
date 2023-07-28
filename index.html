@@ -1,13 +1,18 @@
 <html>
     <head>
       <link rel="stylesheet" href="style.css">
+      <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+<title>DPlix Movies,Series...</title>
+
     </head>
     
     <body>
     <header>
       <nav>
+       <a id="logo" href="index.html"> 
         <div class="logo">
         </div>
+      </a>
         <div class="genre">
           <button onclick="vis()" id="genre">Genre <i class="fa-solid fa-caret-down"></i> </button>
         </div>
@@ -15,7 +20,7 @@
         <a href="" class="white">Trending</a>
         <div class="search">
           <input id="search" type="text" placeholder="Search">
-          <button id="go">Go</button>
+          <button onclick="getSearch()" id="go">Go</button>
         </div>
       </nav>
       <div id="genre-in">
@@ -51,7 +56,11 @@
         </ul>
       </div>
     </header>
-    <main>
+    <main class="search-cont">
+        <div class="searchIN">
+        </div>
+      </main>
+  <div id="main">
 <div class="banner">
   <h2>DARK</h2>
         <div class="banner-buttons">
@@ -87,9 +96,9 @@
     <!-- Top Rated Movies List Here -->
   </div>
 </div>
-    </main>
-             
-      <script src="script.js"></script>
+</div>
+    
+<script src="script.js"></script>
       <script src="https://kit.fontawesome.com/e38682e3fe.js" crossorigin="anonymous"></script>
     </body>
     
