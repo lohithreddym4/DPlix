@@ -213,3 +213,58 @@ border: none;
     filter: brightness(19);
     filter: contrast(100);
 }
+.lang{
+    color:red;
+    width:180px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.browlang{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#tel{
+    background-image: url('https://www.themoviedb.org/t/p/w1280/of4y70hwpWBCRKbfcsQMG6eg7jW.jpg');
+    filter: blur(4px);
+    background-size: cover;
+}
+#hin{
+    background-image: url('https://www.themoviedb.org/t/p/w1280/oWzz0eXSNLWQLgVMT0yjZ3Qe9OR.jpg');
+    filter: blur(2px);
+    background-size: cover;
+}
+#tam
+{
+    background-image: url('https://www.themoviedb.org/t/p/w1280/wz3VaAjw8M9LJ4yVJN7jUHWHJgW.jpg');
+    filter: blur(3px);
+    background-size: cover;
+}
+#mal{
+    background-image: url('https://www.themoviedb.org/t/p/w1280/lJ3RvIirE2C7gdBKvPRaoQ3iCo2.jpg');
+    filter: blur(3px);
+    background-size: cover;
+    
+}
+#eng{
+    background-image: url('https://www.themoviedb.org/t/p/w1280/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg');
+    filter: blur(2px);
+    background-size: cover;
+}
+.lang span{
+    position: absolute;
+    z-index: 1000;
+    font-size: larger;    
+}
+span h2{
+    color: rgb(255, 255, 255);
+
+}
+.lang:hover{
+    opacity: 80%;
+}

@@ -1,3 +1,4 @@
+const div =document.getElementById("main")
 const genre=document.getElementById("genre-in")
 
 
@@ -85,7 +86,6 @@ const options = {
 };
 
 const getSearch=()=>{
-  let div =document.getElementById("main")
   div.innerHTML=''
   const key=document.getElementById('search').value
   getDet(key)
@@ -116,4 +116,123 @@ const getDet=(key)=>{
     .catch(err => console.error(err));
   
   }
-  
+
+    document.getElementById('tel').addEventListener('click',function()
+    {
+      div.innerHTML=''
+      
+      fetch(`https://api.themoviedb.org/3/discover/movie?with_original_language=te`, options)
+        .then(response => response.json())
+        .then(movies => {
+          let movieEle=document.querySelector('.searchIN')
+          movieEle.innerHTML=''
+      for(let i=0;i<movies.results.length;i++)
+      {
+        let movie=movies.results[i]
+        var  imgElem=document.createElement('img')
+        imgElem.style.margin="5px"
+        imgElem.setAttribute('data-id', movie.id)
+        if(movie["poster_path"]==undefined)
+        {
+          continue;
+        }
+        imgElem.src = `https://image.tmdb.org/t/p/original${movie["poster_path"]}`
+        movieEle.appendChild(imgElem)
+      }
+    })
+})
+    document.getElementById('hin').addEventListener('click',function()
+    {
+      div.innerHTML=''
+      fetch(`https://api.themoviedb.org/3/discover/movie?with_original_language=hi`, options)
+        .then(response => response.json())
+        .then(movies => {
+          let movieEle=document.querySelector('.searchIN')
+          movieEle.innerHTML=''
+      for(let i=0;i<movies.results.length;i++)
+      {
+        let movie=movies.results[i]
+        var  imgElem=document.createElement('img')
+        imgElem.style.margin="5px"
+        imgElem.setAttribute('data-id', movie.id)
+        if(movie["poster_path"]==undefined)
+        {
+          continue;
+        }
+        imgElem.src = `https://image.tmdb.org/t/p/original${movie["poster_path"]}`
+        movieEle.appendChild(imgElem)
+      }
+    })
+})
+    document.getElementById('mal').addEventListener('click',function()
+    {
+      div.innerHTML=''
+      
+      fetch(`https://api.themoviedb.org/3/discover/movie?with_original_language=ml`, options)
+        .then(response => response.json())
+        .then(movies => {
+          let movieEle=document.querySelector('.searchIN')
+          movieEle.innerHTML=''
+      for(let i=0;i<movies.results.length;i++)
+      {
+        let movie=movies.results[i]
+        var  imgElem=document.createElement('img')
+        imgElem.style.margin="5px"
+        imgElem.setAttribute('data-id', movie.id)
+        if(movie["poster_path"]==undefined)
+        {
+          continue;
+        }
+        imgElem.src = `https://image.tmdb.org/t/p/original${movie["poster_path"]}`
+        movieEle.appendChild(imgElem)
+      }
+    })
+})
+    document.getElementById('tam').addEventListener('click',function()
+    {
+      div.innerHTML=''
+      
+      fetch(`https://api.themoviedb.org/3/discover/movie?with_original_language=ta`, options)
+        .then(response => response.json())
+        .then(movies => {
+          let movieEle=document.querySelector('.searchIN')
+          movieEle.innerHTML=''
+      for(let i=0;i<movies.results.length;i++)
+      {
+        let movie=movies.results[i]
+        var  imgElem=document.createElement('img')
+        imgElem.style.margin="5px"
+        imgElem.setAttribute('data-id', movie.id)
+        if(movie["poster_path"]==undefined)
+        {
+          continue;
+        }
+        imgElem.src = `https://image.tmdb.org/t/p/original${movie["poster_path"]}`
+        movieEle.appendChild(imgElem)
+      }
+    })
+})
+    document.getElementById('eng').addEventListener('click',function()
+    {
+      div.innerHTML=''
+      
+      fetch(`https://api.themoviedb.org/3/discover/movie?with_original_language=en`, options)
+        .then(response => response.json())
+        .then(movies => {
+          let movieEle=document.querySelector('.searchIN')
+          movieEle.innerHTML=''
+      for(let i=0;i<movies.results.length;i++)
+      {
+        let movie=movies.results[i]
+        var  imgElem=document.createElement('img')
+        imgElem.style.margin="5px"
+        imgElem.setAttribute('data-id', movie.id)
+        if(movie["poster_path"]==undefined)
+        {
+          continue;
+        }
+        imgElem.src = `https://image.tmdb.org/t/p/original${movie["poster_path"]}`
+        movieEle.appendChild(imgElem)
+      }
+    })
+})
