@@ -268,3 +268,9 @@ span h2{
 .lang:hover{
     opacity: 80%;
 }
+#genre-in{
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+}
