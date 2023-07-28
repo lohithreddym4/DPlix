@@ -209,3 +209,7 @@ border: none;
 *{
     scroll-behavior:smooth;
 }
+.logo{
+    filter: brightness(19);
+    filter: contrast(100);
+}
