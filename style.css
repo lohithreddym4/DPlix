@@ -1,70 +1,81 @@
-*{
-    color:white;
+* {
+    color: white;
 }
-body{
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
- background-color: black;
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    background-color: black;
 }
-nav{
+
+nav {
     height: 50px;
     background-color: black;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.logo{
-    background-image:url("img/logo.png");
+
+.logo {
+    background-image: url("img/logo.png");
     background-size: contain;
     width: 100px;
     height: 60px;
     background-repeat: no-repeat;
 }
-nav *
-{
+
+nav * {
     margin-right: 20px;
 }
-#genre{
+
+#genre {
     background-color: transparent;
-    color:white;
+    color: white;
     border: none;
 }
-button{
+
+button {
     cursor: pointer;
 }
-#genre-in{
-  width: 100px;
-  display: none;
-  position: absolute;
-  left: 165px;
-  background-color: rgb(0, 0, 0);
-  top: 35px;
- 
-  margin: 10px;
-  height: 450px;
-  font-size: 10px;
-  z-index: 1000;
+
+#genre-in {
+    width: 100px;
+    display: none;
+    position: absolute;
+    left: 165px;
+    background-color: rgb(0, 0, 0);
+    top: 35px;
+
+    margin: 10px;
+    height: 450px;
+    font-size: 10px;
+    z-index: 1000;
 }
-ul{
-    width:60px;
+
+ul {
+    width: 60px;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     display: contents;
 }
-li{
+
+li {
     color: red;
     padding-top: 4px;
     padding-left: 5px;
 }
-a:visited,a
-{
-    color:red;
+
+a:visited,
+a {
+    color: red;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     text-decoration: red underline;
 }
+
 #search {
     background-color: transparent;
     border: none;
@@ -73,80 +84,94 @@ a:hover{
     height: 100%;
     width: 147px;
 }
-.search{
-    border:1px solid red;
+
+.search {
+    border: 1px solid red;
     border-radius: 2px;
     height: 20px;
-    width:150px;
+    width: 150px;
     display: flex;
     position: absolute;
-    right:70px;
+    right: 70px;
 }
-#go{
+
+#go {
     position: relative;
-    left:-15px;
-    color:whitesmoke;
+    left: -15px;
+    color: whitesmoke;
     background-color: transparent;
     border: 1px solid;
     border-radius: 2px;
 }
-nav a{
-    display: flex;
-    color:white;
-    text-decoration:none;
+header{
+    z-index: 10000000000;
+    position:sticky;
+    top:0px;
 }
-nav a:visited{
+nav a {
     display: flex;
-    color:white;
-    text-decoration:none;
+    color: white;
+    text-decoration: none;
 }
-nav a:hover{
-    text-decoration:none ;
+
+nav a:visited {
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
     border: inset;
-    border:1px solid red;
+    border: 1px solid red;
     border-radius: 3px;
 }
-.white{
-    padding:10px 10px;
+
+.white {
+    padding: 10px 10px;
 }
-#go:hover{
-    color:black;
+
+#go:hover {
+    color: black;
     background-color: white;
 }
-.banner{
-  height:440px;
-  background-image: url('https://image.tmdb.org/t/p/original//3lBDg3i6nn5R2NKFCJ6oKyUo2j5.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
+
+.banner {
+    height: 440px;
+    background-image: url('https://image.tmdb.org/t/p/original/foGkPxpw9h8zln81j63mix5B7m8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
+
 .banner::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100px;
-        background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.61),#000000);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.61), #000000);
 }
 
 .banner h2 {
     font-size: 50px;
     margin: 0;
     z-index: 10;
-    margin-left: 40px;
+    margin-left: 10px;
 
-  }
-  
-  .banner .banner-buttons {
+}
+
+.banner .banner-buttons {
     z-index: 10;
     margin-left: 20px;
- }
-  
-  .banner .banner-buttons button {
+}
+
+.banner .banner-buttons button {
     font-size: 16px;
     color: rgb(255, 255, 255);
     background-color: rgba(109, 109, 110, 0.7);
@@ -154,123 +179,202 @@ nav a:hover{
     padding: 8px 24px;
     border-radius: 4px;
 }
-.banner-description{
-    width: 650px;
+
+.banner-description {
+    width: 300px;
     margin-left: 20px;
 }
-.banner .banner-buttons .button-play,.fa-play{
- background-color: whitesmoke;
- color:black;
+
+.banner .banner-buttons .button-play,
+.fa-play {
+    background-color: whitesmoke;
+    color: black;
 }
-.moviescont{
+
+.moviescont {
     display: flex;
 }
-#originals,#top_rated{
-    height:270px;    
+
+#originals,
+#top_rated {
+    height: 270px;
     display: flex;
-    cursor:pointer;
-    overflow-x:scroll;
+    cursor: pointer;
+    overflow-x: scroll;
 }
-.movies-cont{
+
+.movies-cont {
     display: flex;
-    cursor:pointer;
-    overflow-x:scroll;
+    cursor: pointer;
+    overflow-x: scroll;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
-#originals img:hover,#trending img:hover,#top_rated img:hover {
+
+#originals img:hover,
+#trending img:hover,
+#top_rated img:hover {
     animation: zoom 200ms linear;
     animation-fill-mode: forwards;
 }
 
-#trending{
-    height:170px;
+#trending {
+    height: 170px;
 }
-@keyframes zoom{
-        to{
-            z-index: 10000000;
-            margin:0px;
-        }
+
+@keyframes zoom {
+    to {
+        z-index: 10000000;
+        margin: 0px;
+    }
 }
-.searchIN img{
-    width:172px;
-    height:270px;
-    cursor:pointer;
-    border:1px solid red;
+
+.searchIN img {
+    width: 172px;
+    height: 270px;
+    cursor: pointer;
+    border: 1px solid red;
 }
-.search-cont{
+
+.search-cont {
     display: flex;
     flex-wrap: wrap;
 }
-#logo:visited,#logo:hover{
-border: none;
+
+#logo:visited,
+#logo:hover {
+    border: none;
 }
-*{
-    scroll-behavior:smooth;
+
+* {
+    scroll-behavior: smooth;
 }
-.logo{
+
+.logo {
     filter: brightness(19);
     filter: contrast(100);
 }
-.lang{
-    color:red;
-    width:180px;
-    display:flex;
+
+.lang {
+    color: red;
+    width: 180px;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 270px;
     border: 1px solid white;
     cursor: pointer;
 }
-.browlang{
+
+.browlang {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#tel{
+#tel {
     background-image: url('https://www.themoviedb.org/t/p/w1280/of4y70hwpWBCRKbfcsQMG6eg7jW.jpg');
     filter: blur(4px);
     background-size: cover;
 }
-#hin{
+
+#hin {
     background-image: url('https://www.themoviedb.org/t/p/w1280/oWzz0eXSNLWQLgVMT0yjZ3Qe9OR.jpg');
     filter: blur(2px);
     background-size: cover;
 }
-#tam
-{
+
+#tam {
     background-image: url('https://www.themoviedb.org/t/p/w1280/wz3VaAjw8M9LJ4yVJN7jUHWHJgW.jpg');
     filter: blur(3px);
     background-size: cover;
 }
-#mal{
+
+#mal {
     background-image: url('https://www.themoviedb.org/t/p/w1280/lJ3RvIirE2C7gdBKvPRaoQ3iCo2.jpg');
     filter: blur(3px);
     background-size: cover;
-    
 }
-#eng{
+
+#eng {
     background-image: url('https://www.themoviedb.org/t/p/w1280/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg');
     filter: blur(2px);
     background-size: cover;
 }
-.lang span{
+
+.lang span {
     position: absolute;
     z-index: 1000;
-    font-size: larger;    
+    font-size: larger;
 }
-span h2{
+
+span h2 {
+    font-size: 4vh;
     color: rgb(255, 255, 255);
 
 }
-.lang:hover{
+.lang:hover {
     opacity: 80%;
 }
-#genre-in{
+#genre-in {
     cursor: pointer;
 }
-a{
+a {
     cursor: pointer;
+}
+
+dialog {
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    z-index: 10000000;
+    pointer-events: all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+dialog::backdrop{
+    opacity: 80%;
+    background-color: black;
+    filter: blur(1px);
+}
+dialog[open]{
+    animation: dialog 500ms ease-out;
+}
+
+iframe {
+    border: red;
+}
+
+#x {
+    position: relative;
+    top:-20px;
+    right:-15px;
+    display: block;
+    font-size: 25px;
+    color: red;
+    cursor: pointer;
+    align-self: flex-start;
+    justify-self: flex-end;
+
+}
+
+#x:hover,
+#x:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes dialog{
+from{
+    transform:
+    translatey(-110%);
+}
+to{
+    transform:
+    translatey(0%);
+
+}
 }
