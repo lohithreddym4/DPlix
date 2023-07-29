@@ -135,18 +135,20 @@ const handleMovieSelection = (e) =>  {
     ifra.innerHTML="<p id='rep'>SORRY NO TRAILER FOUND.....😒<p>"
     vid.remove()
   });
-    modal.showModal()
+  document.getElementById('modal').style.display="flex"
+  modal.showModal()
 
 };
 const close = document.getElementById("x");
   close.onclick = () => {
     modal.close()
+    document.getElementById('modal').style.display="none"
   };
   
   window.onclick = function(event) {
     if (event.target == modal) {
     modal.close()
-    modal.style.display = "none";
+    
   }
 }
 async function getTrailer(id) {

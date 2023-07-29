@@ -378,3 +378,23 @@ to{
 
 }
 }
+#modal{
+    display:none;
+}
+footer{
+    border-top: rgb(255, 255, 255) .15px solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+    height:60px;
+    background-color: rgb(0, 0, 0);
+}
+.cpyrgts{
+    font-size: x-small;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    bottom:34%;
+}
