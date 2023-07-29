@@ -206,7 +206,6 @@ const funGen=(lang)=>
     i++;
   }
 }
-
 document.getElementById('tel').addEventListener('click',function()
 {
   funGen('te')
