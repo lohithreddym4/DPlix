@@ -132,7 +132,7 @@ const handleMovieSelection = (e) =>  {
     vid.src = `https://www.youtube.com/embed/${trailer[0].key}`;
   })
   .catch((data) => {
-    ifra.innerHTML="<p id='rep'>SORRY NO TRAILER FOUND.....😒<p>"
+    ifra.innerHTML="<p id='rep'>SORRY NO TRAILER FOUND.....<p>"
     vid.remove()
   });
   document.getElementById('modal').style.display="flex"
@@ -144,7 +144,6 @@ const close = document.getElementById("x");
     modal.close()
     document.getElementById('modal').style.display="none"
   };
-  
   window.onclick = function(event) {
     if (event.target == modal) {
     modal.close()
