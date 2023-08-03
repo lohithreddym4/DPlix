@@ -4,7 +4,6 @@
 
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
     background-color: black;
 }
 
@@ -222,8 +221,8 @@ nav a:hover {
 }
 
 .searchIN img {
-    width: 172px;
-    height: 270px;
+    width: 190px;
+    height: 290px;
     cursor: pointer;
     border: 1px solid red;
 }
