@@ -473,7 +473,7 @@ footer{
 }
 .cpyrgts{
     font-size: x-small;
- maxmedia   display: flex;
+    display: flex;
     justify-content: center;
     align-items: flex-end;
     position: relative;
