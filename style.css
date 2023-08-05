@@ -515,7 +515,12 @@ font-size: 7px;
 .cpyrgts{
     font-size: 7px;
 }
+.searchIN img{
+    height:150px;
+    width:94px;
+    box-shadow: 0.001px 0.001px 3px 1px rgba(255, 0, 0, 0.747);
 
+}
 }
 
 /* For devices with width between 450px and 750px */
